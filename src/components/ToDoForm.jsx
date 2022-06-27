@@ -31,7 +31,12 @@ const ToDoForm = (props) => {
           value={inputData}
           onChange={inputOnchangeHandler}
         />
-        <Button size="medium" variant="contained" type="submit">
+        <Button
+          size="medium"
+          variant="contained"
+          type="submit"
+          disabled={!inputData}
+        >
           submit kerjaan
         </Button>
       </form>
